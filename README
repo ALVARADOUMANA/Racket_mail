@@ -1,0 +1,17 @@
+Pruebas
+
+El archivo test-db.rkt contiene un conjunto de pruebas automatizadas para verificar el correcto funcionamiento del sistema.
+
+
+Importante: Mantenimiento de Datos de Prueba
+
+Para mantener los usuarios predeterminados, el archivo de usuarios y los correos de prueba, es crucial seguir estos pasos:
+
+Después de un pull: Ejecuta test-db.rkt para restaurar los datos de prueba.
+racket test-db.rkt
+
+Antes de un commit: Ejecuta nuevamente test-db.rkt para asegurar que los datos de prueba estén en un estado consistente.
+racket test-db.rkt
+
+
+Estos pasos garantizarán que todos los colaboradores del proyecto trabajen con el mismo conjunto de datos de prueba, facilitando la reproducción de problemas y la verificación de nuevas funcionalidades.
